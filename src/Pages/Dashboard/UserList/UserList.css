@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.table-tile h1 {
+  font-size: 34px;
+  font-family: "Roboto Slab", serif;
+  margin: 25px 0;
+  color: #3cac99;
+}
+.table-tile h3 {
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+  margin: 15px 0;
+  color: #3cac99;
+  text-align: center;
+}
+#dropbtn {
+  border: 1px solid rgb(220, 218, 218);
+  padding: 7px 30px;
+  border-radius: 5px;
+  color: #2d2e2f;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 20px 0px 20px 20px;
+  text-align: center;
+  font-weight: 500;
+}
+#dropbtn:hover {
+  color: white;
+  background-color: rgb(18, 231, 185);
+}
+
+.dropdown-column {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  right: 480px;
+  top: 238px;
+  background-color: #f1f1f1;
+  min-width: 180px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdownContent label {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1.2em auto;
+  gap: 0.8em;
+}
+.dropdownContent label:hover {
+  background: rgb(18, 231, 185);
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+/*  */
+
+.userList {
+  width: 1090px;
+  margin-left: 50px;
+}
+#table {
+  height: 500px;
+  width: 100%;
+  border: 2px solid rgb(212, 205, 205);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow-y: scroll;
+}
+#sticky {
+  position: sticky;
+  top: 0;
+}
+/* Exports Button */
+.exports-btn {
+  display: flex;
+}
+.export-btn {
+  border: 1px solid rgb(220, 218, 218);
+  padding: 7px 30px;
+  border-radius: 5px;
+  color: #151515;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 20px 0px 20px 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.export-btn:hover {
+  color: white;
+  background-color: rgb(18, 231, 185);
+}
+.csv a {
+  color: #161717;
+  text-decoration: none;
+  font-size: 14px;
+}
+.csv a:hover {
+  color: white;
+  background-color: rgb(18, 231, 185);
+}
+#search-alignment {
+  margin: 20px 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+#btn-add {
+  background: #3bb4a5;
+}
+#btn-add a {
+  color: white;
+  text-decoration: none;
+}
+#btn-add:hover {
+  background-color: rgb(18, 231, 185);
+}
+table {
+  width: 100%;
+}
+table thead th {
+  padding: 20px;
+  background: #f7f8fa;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.17px;
+}
+
+table tbody tr:hover {
+  background: rgb(237, 234, 234);
+}
+table tbody td {
+  padding: 8px 24px;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.user-info {
+  margin-left: 10px;
+}
+.name {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(58, 53, 65, 0.87);
+}
+.userName {
+  font-size: 12px;
+  color: rgb(120, 117, 117);
+}
+.email {
+  color: rgb(120, 117, 117);
+  font-size: 14px;
+}
+.plan {
+  color: rgba(58, 53, 65, 0.87);
+}
+.role {
+  color: rgba(58, 53, 65, 0.87);
+  font-weight: 400;
+}
+.role-alignment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.active {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    #4caf50;
+  color: #56ca00;
+  width: 71px;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 16px;
+  font-size: 13px;
+}
+.pending {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    #ed6c02;
+  color: #ffb400;
+  width: 71px;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 16px;
+  font-size: 13px;
+}
+.inactive {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    #8a8d93;
+  color: #8a8d93;
+  width: 71px;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 16px;
+  font-size: 13px;
+}
+
+/* Drop Down */
+.dropbtn {
+  color: rgb(38, 37, 37);
+  padding: 3px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: white;
+  margin-top: 15px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 30px;
+  margin: auto;
+  z-index: 1;
+}
+.dropdown-content button {
+  font-size: 20px;
+  margin-top: 12px;
+  padding: 7px;
+  display: inline-block;
+  color: #3bb4a5;
+  cursor: pointer;
+  background: white;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.edit-icon {
+  color: #3bb4a5;
+}
+.btn-icon:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content {
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.25);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}

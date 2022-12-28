@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#toggle {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 60px;
+  height: 45px;
+  background: #3bb4a5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#toggle:hover {
+  background: rgb(18, 231, 185);
+}
+#toggle::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: white;
+  transform: translateY(-5px);
+  transition: 0.2s;
+  border-radius: 10px;
+}
+#toggle::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: white;
+  transform: translateY(5px);
+  transition: 0.2s;
+  border-radius: 10px;
+}
+#toggle.active::before {
+  transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  background: rgb(38, 40, 40);
+  transition: 0.5s;
+  border-radius: 0px;
+}
+#sidebar.active {
+  left: 0px;
+}
+#sidebar ul {
+  position: relative;
+  top: 50px;
+}
+#sidebar ul li {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 10px;
+}
+#sidebar ul li:hover {
+  background-color: rgb(25, 25, 24);
+}
+#sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-family: "Roboto Slab", serif;
+}
+.icon-alignment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

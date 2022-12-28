@@ -1,0 +1,21 @@
+#title {
+  color: #3bb4a5;
+}
+#selected {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+select {
+  padding: 5px 10px;
+  width: 120px;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+}
+#selected label {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+select option {
+  font-family: "Oswald", sans-serif;
+}

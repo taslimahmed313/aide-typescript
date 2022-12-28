@@ -1,0 +1,13 @@
+.update-img {
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.update-img img {
+  margin: 10px 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.input-file {
+  display: flex;
+}
